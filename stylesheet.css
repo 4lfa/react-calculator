@@ -1,0 +1,97 @@
+body {
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(bgImg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(bgImg.jpg);
+  margin: 20px auto;
+} */
+#calculator {
+  width: 330px;
+  height: 520px;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 2rem auto;
+  padding: 10px;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.display {
+  height: 120px;
+}
+.output {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 30px;
+  color: black;
+}
+.result {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 25px;
+  color: #19aea5;
+}
+
+button {
+  width: 25%;
+  height: 80px;
+  float: left;
+  border-width: 0;
+  font-size: 20px;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+}
+.equal-sign {
+  width: 50%;
+  height: 80px;
+}
+.number,
+.clear,
+.backspace,
+.decimal {
+  background-color: #eaedef;
+}
+.operator,
+.number,
+.clear,
+.equal-sign,
+.decimal {
+  cursor: pointer;
+}
+.operator:active,
+.number:active,
+.clear:active,
+.equal-sign:active,
+.decimal:active {
+  font-size: 13px;
+}
+.row > button:hover {
+  background-color: #bdcbdb;
+}
+
+.operator {
+  font-size: 25px;
+  font-weight: 200;
+  color: #19aea5;
+  background-color: #ebf0ee;
+}
+.equal-sign {
+  background-color: #19aea5;
+  color: #eaedef;
+}
+.clear {
+  background-color: #ebf0ee;
+  font-weight: bold;
+}
